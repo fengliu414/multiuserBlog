@@ -1,0 +1,58 @@
+<div class="post">
+    <div class="post-heading">
+        <div class="post-title">
+            {{p.post_owner.name}}:
+            <a class="blog-title" href={{p.key().id()}}>
+                {{p.subject}}
+            </a>
+        </div>
+
+        <div class="post-date">
+            {{p.created.strftime("%b %d, %Y")}}
+        </div>
+    </div>
+
+    <div class="post-content">
+            {{p._render_text | safe}}
+    </div>
+
+    {% for rp in r %}
+    <div class="reply_area">
+        <a class="replypage" href="{{ '/edit_reply/%s' %rp.key().id() }}">
+        <input class="reply_content" type="submit"
+                   value="{{rp.reply_user_name}}: {{ rp.reply | safe }}">
+        <div class="reply_time">
+                {{ rp.created.strftime("%b %d, %Y") }}
+        </div>
+        </a>
+    </div>
+    {% endfor %}
+
+    <form class="reply_button" action="{{ '/reply/%s' %p.key().id() }}" method="get">
+        <input type="text" name="content" style="width: 91%; margin: 0px">
+        <input type="submit" value="Reply...">
+    </form>
+    <div class="post-footer">
+        <a class="like" href="{{ '/like/%s' %p.key().id()}}">
+            <img src="/static/like.png" alt="like" style="width:20px;height:20px;">
+        </a>
+        <div class="like">{{ likes }}</div>
+        <a class="dislike" href="{{ '/unlike/%s' %p.key().id()}}">
+            <img src="/static/dislike.png" alt="dislike" style="width:20px;height:20px;">
+        </a>
+    </div>
+
+    <!-- <div class="post-footer">
+        <form class="like_button" method="post">
+            <input type = "hidden" name = "button_name" value = "like">
+            <input type = "hidden" name = "key_name" value = {{p.key()}}>
+            <input class="feedback" type="submit" value="Like">
+        </form>
+        {{p.likes}}
+        <form class="unlike_button" method="post">
+            <input type = "hidden" name = "button_name" value = "unlike">
+            <input type = "hidden" name = "key_name" value = {{p.key()}}>
+            <input class="feedback" type="submit" value="unLike">
+        </form>
+    </div> -->
+</div>

@@ -1,0 +1,15 @@
+{% extends "frontbase.html" %}
+
+{% block content %}
+<div class="page_center">
+    <h2>Welcome {{username}}!</h2>
+    <button id="login_button" class="button"> Login</button>
+
+    <script type="text/javascript">
+    document.getElementById("login_button").onclick = function () {
+        location.href = "/login";
+    };
+    </script>
+</div>
+{% endblock %}
+

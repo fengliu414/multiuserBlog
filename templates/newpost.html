@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+  <h2>Share your opinion...</h2>
+  <div class="newpost">
+    <form method="post">
+      <section>
+        <div class="newpost_heading">Title</div>
+        <input class="blog_content" type="text" name="subject" value="{{subject}}">
+      </section>
+
+      <section>
+        <div class="newpost_heading">Blog</div>
+        <textarea name="content">{{content}}</textarea>
+      </section>
+
+      <div class="error">{{error}}</div>
+
+      <input class="new_submit" type="submit" style="width: 30%">
+    </form>
+    <form class="cancel_button" method="post">
+        <input type = "hidden" name = "button_name" value = "delete">
+        <input class="new_submit" type="submit" value="Delete" style="width: 30%">
+    </form>
+    <form class="cancel_button" method="post">
+        <input type = "hidden" name = "button_name" value = "cancel">
+        <input class="new_submit" type="submit" value="Cancel" style="width: 30%">
+    </form>
+    </div>
+{% endblock %}

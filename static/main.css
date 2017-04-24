@@ -1,0 +1,231 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'Dancing Script', cursive;
+    font-size: 14px;
+    width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+    color: #333;
+    background-image: url("http://pic.qiantucdn.com/58pic/get2/311658PIC.jpg");
+    background-repeat: repeat;:
+}
+
+.maintitle {
+    width: 800px;
+    margin: 200px auto 30px;
+}
+
+.rp_reply {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.label {
+    text-align: right
+}
+
+.error {
+    color: red;
+}
+
+table {
+    margin: auto;
+}
+
+label {
+    color: red;
+}
+
+label + label {
+    margin-top: 20px;
+}
+
+input.blog_content {
+    width: 500px;
+    font-size: 20px;
+    padding: 2px;
+    font-family: monospace;
+}
+
+textarea {
+    width: 500px;
+    height: 400px;
+    font-size: 17px;
+    font-family: monospace;
+}
+
+input[type=sumbit] {
+    font-size: 24px;
+}
+
+.logout {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #A9A9A9;
+    border: none;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.post_button {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: #A9A9A9;
+    border: none;
+    color: white;
+    font-size: 25px;
+    padding: 20px 40px;
+    cursor: pointer;
+}
+
+.page_center {
+    max-width: 800px;
+    margin: 30% auto 10px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.replypage .reply_content {
+    width: 100%;
+     background-color: lightgrey;
+     text-align: left;
+}
+
+.reply_area {
+    position: relative;
+}
+
+.replypage .reply_time {
+    position: absolute;
+    top: 15%;
+    right: 1%;
+    z-index:9;
+    color: #999;
+    font-size: 0.8em;
+}
+
+.button {
+    background-color: #A9A9A9;
+    border: none;
+    color: white;
+    padding: 45px 96px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 30px 30px;
+    cursor: pointer;
+}
+
+.main-title {
+    display: block;
+    color: #222;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin: 30px 0;
+    font-size: 5em;
+    text-decoration: none;
+}
+
+.post + .post {
+    margin-top: 15px;
+}
+
+.post-heading {
+    position: relative;
+}
+
+.post-title {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 15px;
+    background: grey;
+}
+
+.post-date {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    color: #999;
+}
+
+.post-content {
+    padding: 20px 10px;
+    background: #c2d1f0;
+}
+
+div.post-footer{
+    margin-top: 5px;
+}
+
+.like {
+    padding-right: 5px;
+    display: inline;
+}
+
+.dislike {
+    display: inline;
+    position: relative;
+    top: 5px;
+}
+
+
+form.rp_edit {
+    display: inline;
+}
+
+input.feedback {
+    background: #00264d;
+    color: white;
+}
+
+input.new_submit {
+    background: #00264d;
+    color: white;
+}
+
+form.cancel_button {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.newpost {
+    text-align: center;
+}
+
+.blog-title {
+    position: relative;
+    left: 35%;
+    text-decoration: none;
+}
+
+div.rp_reply {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.newpost_heading {
+    font-size: 1.2em;
+    margin: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

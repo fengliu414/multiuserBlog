@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="/static/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+    <title>CalBlog</title>
+</head>
+
+<body>
+    <div class="maintitle">
+        <a href="/blog" class="main-title" style="font-size: 10em;">CalBlog</a>
+    </div>
+    <div id="content">
+        <div class="page_center">
+            <button id="signup_button" class="button">Sign up</button>
+            <button id="login_button" class="button">Login</button>
+        </div>
+
+        <script type="text/javascript">
+            document.getElementById("signup_button").onclick = function () {
+                location.href = "/signup";
+            };
+
+            document.getElementById("login_button").onclick = function () {
+                location.href = "/login";
+            };
+        </script>
+    </div>
+
+    <script type="text/javascript">
+    document.getElementById("logout_button").onclick = function () {
+        location.href = "/logout";
+    };
+    </script>
+
+</body>
+</html>

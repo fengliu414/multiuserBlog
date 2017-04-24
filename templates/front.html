@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+<button id="post_button" class="post_button">New post</button>
+
+<script type="text/javascript">
+    document.getElementById("post_button").onclick = function () {
+    location.href = "/blog/newpost";
+    };
+</script>
+
+  {% for p in posts %}
+    {{ p.render() | safe }}
+    <br><br>
+  {% endfor %}
+{% endblock %}

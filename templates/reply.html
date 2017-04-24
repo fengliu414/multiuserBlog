@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+    <div class="post-heading">
+        <div class="post-title">
+            {{p.post_owner.name}}:
+            <a class="blog-title" href={{p.key().id()}}>
+                {{p.subject}}
+            </a>
+        </div>
+
+        <div class="post-date">
+            {{p.created.strftime("%b %d, %Y")}}
+        </div>
+    </div>
+
+    <div class="post-content">
+        {{p.content | safe}}
+    </div>
+
+    <form class="rp_edit" method="post">
+      <!-- <input type = "hidden" name = "button_name" value = "submit">
+      <input type = "hidden" name = "key_name" value = {{key}}> -->
+      <section>
+        <div class="rp_reply">Edit your reply:
+            <input name="content" value="{{reply}}" style="width: 100%">
+            <input class="new_submit" type="submit" style="width: 30%" value="Done">
+        </div>
+      </section>
+    </form>
+    <form class="cancel_button" method="post">
+        <input type = "hidden" name = "button_name" value = "delete">
+        <!-- <input type = "hidden" name = "key_name" value = {{key}}> -->
+        <input class="new_submit" type="submit" style="width: 30%" value="Delete">
+    </form>
+    <form class="cancel_button" method="post">
+        <input type = "hidden" name = "button_name" value = "cancel">
+        <!-- <input type = "hidden" name = "key_name" value = {{key}}> -->
+        <input class="new_submit" type="submit" style="width: 30%" value="Cancel">
+    </form>
+
+{% endblock %}
